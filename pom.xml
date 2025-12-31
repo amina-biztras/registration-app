@@ -37,7 +37,6 @@
     <build>
         <pluginManagement>
             <plugins>
-                <!-- Compiler Plugin -->
                 <plugin>
                     <artifactId>maven-compiler-plugin</artifactId>
                     <version>3.11.0</version>
@@ -48,7 +47,6 @@
                     </configuration>
                 </plugin>
 
-                <!-- WAR Plugin -->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-war-plugin</artifactId>
@@ -58,7 +56,6 @@
                     </configuration>
                 </plugin>
 
-                <!-- Release Plugin -->
                 <plugin>
                     <artifactId>maven-release-plugin</artifactId>
                     <version>3.1.0</version>
@@ -67,13 +64,11 @@
                     </configuration>
                 </plugin>
 
-                <!-- Site Plugin -->
                 <plugin>
                     <artifactId>maven-site-plugin</artifactId>
                     <version>3.12.0</version>
                 </plugin>
 
-                <!-- Reporting Plugins -->
                 <plugin>
                     <artifactId>maven-checkstyle-plugin</artifactId>
                     <version>3.2.2</version>
@@ -111,7 +106,6 @@
                     <version>2.4</version>
                 </plugin>
 
-                <!-- Jetty Plugin for testing -->
                 <plugin>
                     <groupId>org.eclipse.jetty</groupId>
                     <artifactId>jetty-maven-plugin</artifactId>
@@ -129,24 +123,28 @@
                 <version>4.0.1</version>
                 <scope>provided</scope>
             </dependency>
+
             <dependency>
                 <groupId>javax.servlet.jsp</groupId>
                 <artifactId>javax.servlet.jsp-api</artifactId>
                 <version>2.3.3</version>
                 <scope>provided</scope>
             </dependency>
+
             <dependency>
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
                 <version>4.13.2</version>
                 <scope>test</scope>
             </dependency>
+
             <dependency>
                 <groupId>org.mockito</groupId>
                 <artifactId>mockito-core</artifactId>
                 <version>5.5.0</version>
                 <scope>test</scope>
             </dependency>
+
             <dependency>
                 <groupId>org.hamcrest</groupId>
                 <artifactId>hamcrest</artifactId>
